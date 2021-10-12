@@ -1,0 +1,38 @@
+.menu{
+    list-style:square;
+    padding: 0%;
+    background-color: rgb(118, 204, 240);
+    width: 300%;
+    max-width: 1225px;
+    margin: white 5px solid;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.menu li a:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+.menu li a:active{
+    background-color: aquamarine;
+
+}
+.title1{
+    text-align: center;
+}
+.informacion{
+    background-color: rgba(118, 204, 240,0.2);
+    text-align: center;
+    margin: white 5px solid;
+    padding: 0%;
+}

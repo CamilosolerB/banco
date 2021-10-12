@@ -1,0 +1,36 @@
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background-color: #222;
+    align-items: center;
+}
+.allmenus{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-left: 13%;
+}
+.navegador ul{
+    list-style: none;
+}
+.navegador li{
+    display: inline-block;
+}
+.navegador li a{
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+    color: #fff;
+}
+.navegador li a:hover{
+    background-color: #fff;
+    color: #222;
+}
+.intro{
+    text-align: center;
+    padding: 5%;
+}

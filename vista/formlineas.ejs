@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/actualizarli.js"></script>
+    <link rel="stylesheet" href="../libreria/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/formulariolineas.css">
+    <link rel="shortcut icon" href="estilologos/favicon.png" type="image/x-icon">
+    <title>consulta lineas</title>
+</head>
+<body>
+    <header>
+        <h1>Menu de lineas de credito</h1>
+        <nav>
+            <li><a href="cerrar" class="salida"><i class="fas fa-sign-out-alt">Cerrar sesion</i></a></li>      
+            <li><a href="redirigir" class="atras"><i class="fas fa-arrow-circle-left">Atras</i></a></li>  
+            <li><a href="redirecciona" class="redirecciona"><i class="fas fa-redo">Volver al menu empleado</i></a></li>     
+        </nav>        
+    </header>
+    <h1>Formularios Lineas</h1>
+    <form action="/inslin" method="POST" class="ingreso">
+    <input type="number" name="codlinea" value="" placeholder="Linea de codigo">
+    <input type="number" name="nomlinea" value="" placeholder="Numero de la linea">
+    <input type="number" name="montomaximo" value="" placeholder="Monto maximo a prestar">
+    <input type="number" name="plazomax" value="" placeholder="Plazo maximo de pago">
+    <input type="submit" value="insertar" >
+    </form>
+    <form class="resultado">
+        <table>
+            <thead>
+                <tr class="test">
+                    <th>Codigo de la Linea</th>
+                    <th>numero de la linea</th>
+                    <th>Monto maximo a prestar</th>
+                    <th>Plazo maximo de pago</th>
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>    
+                </tr>
+            </thead>
+            <tbody >
+                <% datos.forEach(function (datos){ %>
+                <tr class="resu">
+                    <td><input type="text" value="<%=datos.codlinea%>" name="codlinea" id="codlinea" class="codlinea"></td>
+                    <td><input type="text" value="<%=datos.nomlinea%>" name="nomlinea" id="nomlinea" class="nomlinea"></td>
+                    <td><input type="text" value="<%=datos.montomaximo%>" name="montomaximo" id="montomaximo" class="montomaximo"></td>
+                    <td><input type="text" value="<%=datos.plazomax%>" name="plazomax" id="plazomax" class="plazomax"></td>
+                    <td><input type="button" value="actualizar" name="actualizar" id="btnact" class="btnact"></td>
+                    <td><input type="button" value="eliminar" name="eliminar" id="btndel" class="btndel"></td>
+                </tr>
+                <%})%>
+            </tbody>
+        </table>
+    </form>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>

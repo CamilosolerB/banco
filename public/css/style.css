@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
+
+body{
+    background-color: #e8e8e8;
+}
+h1{
+    font-family: 'Patrick Hand', cursive;
+    text-align: center;
+}
+h3{
+    text-align: center;
+
+}
+header{
+    background: linear-gradient(75deg,#fff,rgb(118, 204, 240));
+
+}
+.cajasuperior{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    list-style:square;
+    padding: 0%;
+    background-color: rgb(118, 204, 240);
+    margin: auto;
+}
+.menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.menu li a:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+.menu li a:active{
+    background-color: aquamarine;
+
+}
+
+h2{
+    text-align: center;
+    font-size:large;
+}
+
+.imagenprincipal{
+    position: relative;
+    padding-top: 5px;
+    width: 1225px;
+    height: 450px;
+    left: 5%;
+}
+.presentacion{
+    text-align: center;
+    font-family: 'Tangerine', cursive;
+    font-size: 3.5em;
+    padding: 0%;
+}
+.final{
+    list-style:square;
+    padding: 0%;
+    background-color: #34495E;
+    width: 200%;
+    max-width: 1225px;
+    margin: auto;
+}
+.final li a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    display: block;
+    
+}
+.final li{
+    display: inline;
+    text-align: center;
+    
+}
+
+.final li a:hover{
+    background-color: #ffffff;
+    color: #000000;
+}
+.final li a:active{
+    background-color: aquamarine;
+
+}
+.titlefooter{
+    color: #ffffff;
+}
+
+.imgsec{
+    height: 250px;
+    width: 480px;
+    position: relative;
+    left: 715px;
+    padding-top: 2em;
+    padding-left: 30px;
+}
+.box1{
+    font-family: 'Berkshire Swash', cursive;
+    background-color: rgb(118, 204, 240);
+    height: 250px;
+    width: 600px;
+    position: relative;
+    bottom: 270px;
+    left: 100px;
+}
+
+.imagen2{
+    height: 250px;
+    width: 400px;
+    position: relative;
+    bottom: 250px;
+    padding-top: 20px;
+    left: 100px;
+    padding-right: 20px;
+}
+.second{
+    font-family: 'Berkshire Swash', cursive;
+    background-color: rgb(118, 204, 240);
+    height: 250px;
+    width: 675px;
+    position: relative;
+    bottom: 520px;
+    left: 550px;
+}
+.final{
+    position: relative;
+    bottom: 500opx;
+}
+.asociaciones{
+    position: relative;
+    bottom: 500px;
+}
+.firtscompany{
+    position:relative;
+    bottom: 450px;
+    left: 150px;
+}
+.sena{
+    position: relative;
+    bottom: 450px;
+    left: 300px;
+    height: 200px;
+}
+.TIC{
+    position: relative;
+    bottom: 450px;
+    left: 450px;
+    height: 200px;
+}
+.microsoft{
+    position: relative;
+    bottom: 150px;
+    height: 200px;
+    width: 200px;
+    right: 290px;
+}
+.bancolombia{
+    position: relative;
+    bottom: 150px;
+    height: 200px;
+    width: 200px;
+    right: 110px;
+}
+.logo{
+    position: relative;
+    top: 10px;
+}

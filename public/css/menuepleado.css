@@ -1,0 +1,24 @@
+body{
+    background: url(https://th.bing.com/th/id/R.b396684e98f1ef29306ad37dfefdea06?rik=lYxf5S97Wqe%2bhw&pid=ImgRaw&r=0);
+    color: #fff;
+}
+.container{
+    position: relative;
+    background-color: #141a35;
+    width: 40%;
+    text-align: center;
+    left: 30%;
+}
+.navegar ul{
+    list-style: none;
+}
+.navegar li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 30px;
+}
+.navegar li a:hover{
+    background-color: #fff;
+    color: #333;
+}

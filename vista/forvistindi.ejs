@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../libreria/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/individual.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/actualizarindi.js"></script>
+    <link rel="shortcut icon" href="estilologos/favicon.png" type="image/x-icon">
+    <title>Seccion Cliente</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Menu de Cliente</h1>
+        <nav>
+            <li><a href="">retirar dinero</a></li>
+            <li><a href="">Pasar plata</a></li>
+            <li><a href="cerrar" class="salida"><i class="fas fa-sign-out-alt">Cerrar sesion</i></a></li>          
+        </nav>        
+    </header>
+    <!--Formulario Usuario-->
+    <form class="resultado">
+        <table>
+            <thead>
+                <tr class="test">
+                    <th>Documento</th>
+                    <th>Usuario</th>
+                    <th>Clave</th>
+                    <th>Rol</th>
+                    <th>Estado</th>
+                    <th>Imagen</th>
+                    <th>Actualizar</th>   
+                </tr>
+            </thead>
+            <tbody >
+                <% datos.forEach(function (datos){ %>
+                    <h1 style="color: #222; background-color: aliceblue;">Bienvenid@ <%=datos.nombrec%> <%=datos.apellido%></h1>
+                <tr class="resu">
+                    <td><input type="text" value="<%=datos.documento%>" name="documento" id="documento" class="documento"></td>
+                    <td><input type="text" value="<%=datos.nombre%>" name="nombre" id="nombre" class="nombre"></td>
+                    <td><input type="text" value="<%=datos.clave%>" name="clave" id="clave" class="clave"></td>
+                    <td><input type="text" value="<%=datos.rol%>" name="rol" id="rol" class="rol"></td>
+                    <td><input type="text" value="<%=datos.estado%>" name="estado" id="estado" class="estado"></td>
+                    <td><input type="text" value="<%=datos.imagen%>" name="imagen" id="imagen" class="imagen"></td>
+                    <td><input type="submit" value="actualizar" name="actualizar" id="btnact1" class="btnact1"></td>
+                <%})%>
+            </form>
+            </tbody>
+        </table>
+    </form>
+    <!--Inicio de la tabla del cliente-->
+    <form class="clientes">
+        <table>
+            <thead>
+                <tr class="test">
+                    <th>Documento</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>correo</th>
+                    <th>celular</th>
+                    <th>sexo</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Actualizar</th>
+                      
+                </tr>
+            </thead>
+            <tbody >
+                <% datos.forEach(function (datos){ %>
+                
+                <tr class="resu">
+                    <td><input type="text" value="<%=datos.documentoc%>" name="documentoc" id="documentoc" class="documentoc"></td>
+                    <td><input type="text" value="<%=datos.nombrec%>" name="nombrec" id="nombrec" class="nombrec"></td>
+                    <td><input type="text" value="<%=datos.apellido%>" name="apellido" id="apellido" class="apellido"></td>
+                    <td><input type="text" value="<%=datos.correo%>" name="correo" id="correo" class="correo"></td>
+                    <td><input type="text" value="<%=datos.celular%>" name="celular" id="celular" class="celular"></td>
+                    <td><input type="text" value="<%=datos.sexo%>" name="sexo" id="sexo" class="sexo"></td>
+                    <td><input type="text" value="<%=datos.fecha_nacimiento%>" name="fecha_nacimiento" id="fecha_nacimiento" class="fecha_nacimiento"></td>
+                    <td><input type="submit" value="actualizar" name="actualizar" id="btnact2" class="btnact2"></td>
+                </tr>
+            <%})%>   
+            </tbody>
+        </table>
+    </form>
+
+    <!--Inicio de la tabla de la linea-->
+    <form class="resultado">
+        <table>
+            <thead>
+                <tr class="test">
+                    <th>Codigo de la Linea</th>
+                    <th>numero de la linea</th>
+                    <th>Monto maximo a prestar</th>
+                    <th>Plazo maximo de pago</th>   
+                </tr>
+            </thead>
+            <tbody >
+                <tr class="resu">
+                    <% datos.forEach(function (datos){ %>
+                    <td><input type="text" value="<%=datos.codlinea%>" name="codlinea" id="codlinea" class="codlinea" readonly></td>
+                    <td><input type="text" value="<%=datos.nomlinea%>" name="nomlinea" id="nomlinea" class="nomlinea" readonly></td>
+                    <td><input type="text" value="<%=datos.montomaximo%>" name="montomaximo" id="montomaximo" class="montomaximo" readonly></td>
+                    <td><input type="text" value="<%=datos.plazomax%>" name="plazomax" id="plazomax" class="plazomax" readonly></td>
+                </tr>
+                <%})%>
+            </tbody>
+        </table>
+    </form>
+     <!--Inicio de la tabla del credito-->
+     <form class="creditos">
+        <table>
+            <thead>
+                <tr class="test">
+                    <th>Codigo</th>
+                    <th>Documento</th>
+                    <th>Linea de codigo</th>
+                    <th>Monto credito</th>
+                    <th>fecha solicitud</th>
+                    <th>plazo de pago</th>   
+                </tr>
+            </thead>
+            <tbody >
+                <tr class="resu">
+                    <% datos.forEach(function (datos){ %>
+                        
+                    <td><input type="text" value="<%=datos.codigo%>" name="codigo" id="codigo" class="codigo" readonly></td>
+                    <td><input type="text" value="<%=datos.documentocre%>" name="documentocre" id="documento" class="documento" readonly></td>
+                    <td><input type="text" value="<%=datos.codlineacre%>" name="codlineacre" id="codlinea" class="codlinea" readonly></td>
+                    <td><input type="text" value="<%=datos.monto%>" name="monto" id="monto" class="monto" readonly></td>
+                    <td><input type="text" value="<%=datos.fecha%>" name="fecha" id="fecha" class="fecha" readonly></td>
+                    <td><input type="text" value="<%=datos.plazo%>" name="plazo" id="plazo" class="plazo" readonly></td>
+                </tr>
+                <%})%>
+            </tbody>
+        </table>
+    </form>
+<div class="tablas">
+    <form action="/pasar" method="POST" class="pasar">
+    <h1>Pasa plata</h1>
+    <% datos.forEach(function (datos){ %>
+        <input type="number" value="<%=datos.documentocre%>" name="midoc" placeholder="Indique su documento" readonly>
+        <input type="number" placeholder="Identificacion de la persona" name="doc">
+        <input type="number" placeholder="Cantidad a pasar" name="monto">
+        <input type="submit" value="Pasar ya" name="Pasar ya" class="boton">
+    <%})%>
+    </form>
+
+    <form action="/retirar" method="POST" class="retirar">
+        <% datos.forEach(function (datos){ %>
+        <h1>Retirar dinero</h1>
+        <input type="number" value="<%=datos.documentocre%>" placeholder="Indique su documento" name="doc">
+        <input type="number" placeholder="Indique la cantidad a retirar" name="monto">
+        <input type="submit" placeholder="Retirar" value="Retirar">
+        <%})%>
+    </form>
+</div>
+</body>
+</form>
+</html>

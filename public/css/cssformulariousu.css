@@ -1,0 +1,48 @@
+body{
+    background: url(https://th.bing.com/th/id/R9ae84f4013520e3c5e6e51d5d838286b?rik=p1NtSaOTBQyX7w&pid=ImgRaw);
+    margin: 0;
+}
+.test{
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+}
+header{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header li{
+    display: inline-block;
+}
+header a{
+    color: #fff;
+    display: block;
+    padding: 15px;
+}
+.ingreso{
+    position: relative;
+    background-color: #7894D9;
+    width: 300px;
+    text-align: center;
+    left: 41%;
+    padding-bottom: 12px;
+    margin-bottom: 10px;
+}
+.ingreso input{
+    line-height: 4;
+    padding-right: 20%;
+}
+.resu{
+    line-height: 5;
+}
+.resu input{
+    padding: 22px;
+}
+.resu input:hover{
+    background-color: #7894D9;
+}
+

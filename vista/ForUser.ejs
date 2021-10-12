@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cssformulariousu.css">
+    <link rel="stylesheet" href="../libreria/fontawesome/css/all.min.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/actualizar.js"></script>
+    <link rel="shortcut icon" href="estilologos/favicon.png" type="image/x-icon">
+    <title>consulta usuarios</title>
+</head>
+<body>
+    
+    <header>
+        <h1>Menu de usuario</h1>
+        <nav>
+            <li><a href="cerrar" class="salida"><i class="fas fa-sign-out-alt">Cerrar sesion</i></a></li>      
+            <li><a href="redirigir" class="atras"><i class="fas fa-arrow-circle-left">Atras</i></a></li>    
+            <li><a href="redirecciona" class="redirecciona"><i class="fas fa-redo">Volver al menu empleado</i></a></li>   
+        </nav>        
+    </header>
+    <h1>Usuarios</h1>
+    <form action="/frminsertar" method="POST" class="ingreso">
+        <input type="number" name="documento" value="" placeholder="Numero de documento">
+        <input type="text" name="nombre" value="" placeholder="Usuario"> 
+        <input type="password" name="clave" value="" placeholder="Contraseña">
+        <input type="text" name="rol" value="" placeholder="Rol">
+        <input type="text" name="estado" value="" placeholder="Estado">
+        <input type="text"name="imagen" value="" placeholder="Foto">
+    <input type="submit" value="insertar" >
+    </form>
+    <form class="resultado">
+        <table>
+            <thead>
+                <tr class="test">
+                    <th>Documento</th>
+                    <th>Usuario</th>
+                    <th>Clave</th>
+                    <th>Rol</th>
+                    <th>Estado</th>
+                    <th>Imagen</th>
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>    
+                </tr>
+            </thead>
+            <tbody >
+                <% datos.forEach(function (datos){ %>
+                <tr class="resu">
+                    <td><input type="text" value="<%=datos.documento%>" name="documento" id="documento" class="documento"></td>
+                    <td><input type="text" value="<%=datos.nombre%>" name="nombre" id="nombre" class="nombre"></td>
+                    <td><input type="text" value="<%=datos.clave%>" name="clave" id="clave" class="clave"></td>
+                    <td><input type="text" value="<%=datos.rol%>" name="rol" id="rol" class="rol"></td>
+                    <td><input type="text" value="<%=datos.estado%>" name="estado" id="estado" class="estado"></td>
+                    <td><input type="text" value="<%=datos.imagen%>" name="imagen" id="imagen" class="imagen"></td>
+                    <td><input type="submit" value="actualizar" name="actualizar" id="btnact" class="btnact"></td>
+                    <td><input type="submit" value="eliminar" name="eliminar" id="btndel" class="btndel"></td>
+                </tr>
+                <%})%>
+            </tbody>
+        </table>
+    </form>
+    <footer>
+        
+    </footer>
+</body>
+</form>
+</html>

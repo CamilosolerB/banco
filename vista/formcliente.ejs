@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/actualizarcli.js"></script>
+    <link rel="stylesheet" href="../libreria/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/cssformulariousu.css">
+    <link rel="shortcut icon" href="estilologos/favicon.png" type="image/x-icon">
+    <title>consulta clientes</title>
+</head>
+<body>
+    <header>
+        <h1>Formulario de clientes</h1>
+        <nav>
+            <li><a href="cerrar" class="salida"><i class="fas fa-sign-out-alt">Cerrar sesion</i></a></li>      
+            <li><a href="redirigir" class="atras"><i class="fas fa-arrow-circle-left">Atras</i></a></li>
+            <li><a href="redirecciona" class="redirecciona"><i class="fas fa-redo">Volver al menu empleado</i></a></li>    
+        </nav>        
+    </header>
+    <h1>clientes</h1>
+    <form action="/inscli" method="POST" class="ingreso">
+    <input type="number" name="documentoc" value="" placeholder="documento">
+    <input type="text" name="nombrec" value="" placeholder="Nombre">
+    <input type="text" name="apellido" value="" placeholder="Apellido">
+    <input type="email" name="correo" value="" placeholder="email">
+    <input type="number" name="celular" value="" placeholder="numero de telefono">
+    <input type="text"name="sexo" value="" placeholder="Sexo">
+    <input type="date" name="fecha_nacimiento" value="" placeholder="Fecha de nacimiento">    
+    <input type="submit" value="insertar" >
+    </form>
+    <form class="resultado">
+        <table>
+            <thead>
+                <tr class="test">
+                    <th>Documento</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>correo</th>
+                    <th>celular</th>
+                    <th>sexo</th>
+                    <th>Fecha de nacimiento</th>
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>    
+                </tr>
+            </thead>
+            <tbody >
+                <% datos.forEach(function (datos){ %>
+                <tr class="resu">
+                    <td><input type="text" value="<%=datos.documentoc%>" name="documentoc" id="documentoc" class="documentoc"></td>
+                    <td><input type="text" value="<%=datos.nombrec%>" name="nombrec" id="nombrec" class="nombrec"></td>
+                    <td><input type="text" value="<%=datos.apellido%>" name="apellido" id="apellido" class="apellido"></td>
+                    <td><input type="text" value="<%=datos.correo%>" name="correo" id="correo" class="correo"></td>
+                    <td><input type="text" value="<%=datos.celular%>" name="celular" id="celular" class="celular"></td>
+                    <td><input type="text" value="<%=datos.sexo%>" name="sexo" id="sexo" class="sexo"></td>
+                    <td><input type="text" value="<%=datos.fecha_nacimiento%>" name="fecha_nacimiento" id="fecha_nacimiento" class="fecha_nacimiento"></td>
+                    <td><input type="button" value="actualizar" name="actualizar" id="btnact" class="btnact"></td>
+                    <td><input type="button" value="eliminar" name="eliminar" id="btndel" class="btndel"></td>
+                </tr>
+                <%})%>
+            </tbody>
+        </table>
+    </form>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>

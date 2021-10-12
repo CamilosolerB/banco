@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/consultaind.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/cssempleado.css">
+    <link rel="stylesheet" href="../libreria/fontawesome/css/all.min.css">
+    <link rel="shortcut icon" href="estilologos/favicon.png" type="image/x-icon">
+    <title>ingreso clientes</title>
+</head>
+<body>
+
+    <header>
+        <a href="/" class="salida"><i class="fas fa-sign-out-alt">Salida</i></a>
+    </header>
+    <h1 class="title">Bienvenido al menu</h1>
+
+    <div class="container">
+        <form action="/login" method="POST" autocomplete="off" class="formulario">
+            <label><input type="text" class="nombre" id="nombre" name="nombre" placeholder="Ingrese el usuario"></label>
+            <label><input type="password" class="clave" id="clave" name="clave" placeholder="Ingrese su contraseña"></label>
+            <input type="submit" value="iniciar sesion" id="iniciar" name="iniciar">
+            
+        </form>
+    </div>
+</body>
+</html>

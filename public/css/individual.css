@@ -1,0 +1,87 @@
+body{
+    background: url(https://th.bing.com/th/id/R9ae84f4013520e3c5e6e51d5d838286b?rik=p1NtSaOTBQyX7w&pid=ImgRaw);
+    margin: 0;
+}
+.test{
+    background-color: aquamarine;
+}
+h1{
+    text-align: center;
+}
+header{
+    background-color: black;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header li{
+    display: inline-block;
+}
+header a{
+    color: #fff;
+    display: block;
+    padding: 15px;
+}
+.resu{
+    line-height: 3;
+}
+.resu input{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.resu input:hover{
+    background-color: #7894D9;
+}
+.pasar{
+    width: 40%;
+    display: block;
+    background-color: azure;
+}
+.pasar{
+    line-height: 3;
+    align-items: baseline;
+}
+.pasar input{
+    margin-top: 5px;
+    margin-left: 30%;
+    padding-top: 15px;
+    padding-right: 100px;
+    padding-bottom: 15px;
+    display: block;
+}
+.pasar input:hover{
+    background-color: #7894D9;
+}
+.boton{
+    background-color: crimson;
+    padding: 0;
+}
+.retirar{
+    width: 40%;
+    display: block;
+    background-color: azure;
+}
+.retirar{
+    line-height: 3;
+    align-items: baseline;
+}
+.retirar input{
+    margin-top: 5px;
+    margin-left: 30%;
+    padding-top: 15px;
+    padding-right: 100px;
+    padding-bottom: 15px;
+    display: block;
+}
+.retirar input:hover{
+    background-color: #7894D9;
+}
+.boton{
+    background-color: crimson;
+    padding: 0;
+}
+.tablas{
+    display: flex;
+    margin-left: 10%;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/actualizarcre.js"></script>
+    <link rel="stylesheet" href="../libreria/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="css/cssformulariousu.css">
+    <link rel="shortcut icon" href="estilologos/favicon.png" type="image/x-icon">
+    <title>consulta creditos</title>
+</head>
+<body>
+    <header>
+        <h1>Menu de creditos</h1>
+        <nav>
+            <li><a href="cerrar" class="salida"><i class="fas fa-sign-out-alt">Cerrar sesion</i></a></li>      
+            <li><a href="redirigir" class="atras"><i class="fas fa-arrow-circle-left">Atras</i></a></li> 
+            <li><a href="redirecciona" class="redirecciona"><i class="fas fa-redo">Volver al menu empleado</i></a></li>      
+        </nav>        
+    </header>
+    <h1>creditos</h1>
+    <form action="/credins" method="POST" class="ingreso">
+    <input type="number" name="codigo" value="" placeholder="Codigo">
+    <input type="number" name="documentocre" value="" placeholder="Documento">
+    <input type="text" name="codlineacre" value="" placeholder="Linea de codigo">
+    <input type="number" name="monto" value="" placeholder="Monto del credito">
+    <input type="date" name="fecha" value="" placeholder="Fecha de solicitud del credito">
+    <input type="number" name="plazo" value="" placeholder="Plazo de pago">
+    <input type="submit" value="insertar" >
+    </form>
+    <form class="resultado">
+        <table>
+            <thead>
+                <tr class="test">
+                    <th>Codigo</th>
+                    <th>Documento</th>
+                    <th>Linea de codigo</th>
+                    <th>Monto credito</th>
+                    <th>fecha solicitud</th>
+                    <th>plazo de pago</th>
+                    <th>Actualizar</th>
+                    <th>Eliminar</th>    
+                </tr>
+            </thead>
+            <tbody >
+                <% datos.forEach(function (datos){ %>
+                <tr class="resu">
+                    <td><input type="text" value="<%=datos.codigo%>" name="codigo" id="codigo" class="codigo"></td>
+                    <td><input type="text" value="<%=datos.documentocre%>" name="documentocre" id="documento" class="documento"></td>
+                    <td><input type="text" value="<%=datos.codlineacre%>" name="codlineacre" id="codlinea" class="codlinea"></td>
+                    <td><input type="text" value="<%=datos.monto%>" name="monto" id="monto" class="monto"></td>
+                    <td><input type="text" value="<%=datos.fecha%>" name="fecha" id="fecha" class="fecha"></td>
+                    <td><input type="text" value="<%=datos.plazo%>" name="plazo" id="plazo" class="plazo"></td>
+                    <td><input type="button" value="actualizar" name="actualizar" id="btnact" class="btnact"></td>
+                    <td><input type="button" value="eliminar" name="eliminar" id="btndel" class="btndel"></td>
+                </tr>
+                <%})%>
+            </tbody>
+        </table>
+    </form>
+    <footer>
+        
+    </footer>
+</body>
+
+</html>
