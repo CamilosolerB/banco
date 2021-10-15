@@ -20,7 +20,8 @@
     "path": "^0.12.7",
     "redirect": "^0.2.0",
     "session": "^0.1.0",
-    "sql": "^0.78.0"
+    "sql": "^0.78.0",
+    "start": "^5.1.0"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"
