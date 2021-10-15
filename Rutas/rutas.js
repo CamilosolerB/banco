@@ -1,9 +1,10 @@
+const open=require('open')
 const express=require('express');//importa el metodo express
 const controller=require('../controlador/controller');//hace el llamado e¡de la exportacion
 const rutas=express.Router();
 
 //abre los controladores desarrollados obviamente si estan creados o no
-rutas.get('/',controller.index);//abre la pagina principal
+await open(rutas.get('/',controller.index));//abre la pagina principal
 rutas.get('/logueo',controller.logueo);
 rutas.get('/redirigir',controller.redirigir);
 rutas.get('/redirecciona',controller.redireciona);
