@@ -1,6 +1,6 @@
 const connection=require('../conexion/conexion');
 const cnn=connection();
-const open=require('open');
+//const open=require('open');
 const{render}=require('ejs');//habilita la conexion entre ejs porque con html supondria problemas
 const bcryptjs=require('bcryptjs');//cuando se crea este metodo hace que la contraseña se encripte incluso si tiene el acceso a la base de datos
 const controller={};//habilita lafuncion de crear controladores
