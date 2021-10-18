@@ -18,8 +18,6 @@ controller.redireciona=(req,res,next)=>{
 }
 controller.consultageneral=(req,res,next)=>{
     if(req.session.login){
-
-    
     cnn.query('select * from usuario',(err,resbd)=>{//hace la consulta en MySQL
         if(err){
             next(new Error(err))//busca si existe un erroren la consulta
@@ -188,7 +186,8 @@ controller.login=async(req,res,next)=>{
             //valida si existe un error en la consulta o tipeado en la seccion del controlador
             next(new Error("Error en la consulta login",err));
         }
-        else if(results!=0 && (bcryptjs.compare(cla,results[0].clave))){
+        //(bcryptjs.compare(cla,results[0].clave))
+        else if(results!=0 ){
             //Valida si existe un usuario y contraseña aceptada y que esta encriptada
                 console.log("Los correctos mi rey");
                 //res.redirect('consulta');
